@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Outfit, Playfair_Display } from "next/font/google";
 import { siteConfig } from "@/data/site.config";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -10,6 +10,12 @@ const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
   weight: ["300", "400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,16 +31,23 @@ export default function RootLayout({
   return (
     <html lang='en' className='scroll-smooth' suppressHydrationWarning>
       <body
-        className={`${outfit.variable} antialiased bg-background text-foreground transition-colors duration-300 selection:bg-accent/20 selection:text-accent`}
+        className={`${outfit.variable} ${playfair.variable} font-sans antialiased bg-background text-foreground`}
       >
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
-          enableSystem
-          disableTransitionOnChange
+          enableSystem={false}
+          disableTransitionOnChange={false}
         >
+          {/* Animated Background Blobs */}
+          <div className='fixed inset-0 overflow-hidden pointer-events-none -z-10'>
+            <div className='blob blob-1' />
+            <div className='blob blob-2' />
+            <div className='blob blob-3' />
+          </div>
+
           <Header />
-          <main className='min-h-screen'>{children}</main>
+          <main className='min-h-screen relative'>{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
