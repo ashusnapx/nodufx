@@ -39,7 +39,12 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       variants={fadeUp}
       className={`group relative ${index % 2 === 1 ? "md:mt-24" : ""}`}
     >
-      <a href={project.link} className='block'>
+      <a
+        href={project.link}
+        className='block'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         {/* Card with gradient border */}
         <div className='relative rounded-3xl overflow-hidden bg-card border border-border/50 hover:border-accent/50 transition-all duration-500 glow-hover'>
           {/* Image */}

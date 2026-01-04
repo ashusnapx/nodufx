@@ -8,6 +8,7 @@ import { siteConfig } from "@/data/site.config";
 import { cn } from "@/utils/cn";
 import { menuVariants } from "@/animations/variants";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import Image from "next/image";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +30,16 @@ export const Header = () => {
       )}
     >
       <div className='mx-auto px-6 md:px-12 max-w-7xl flex items-center justify-between'>
-        {/* Logo with gradient */}
-        <Link href='/' className='relative z-50'>
+        {/* Logo with Image and Gradient Text */}
+        <Link href='/' className='relative z-50 flex items-center gap-3 group'>
+          <div className='relative w-10 h-10 rounded-full overflow-hidden border-2 border-accent/20 group-hover:border-accent transition-colors duration-300'>
+            <Image
+              src='/images/logo.jpg'
+              alt='Logo'
+              fill
+              className='object-cover'
+            />
+          </div>
           <span className='text-xl font-bold font-display gradient-text'>
             {siteConfig.name.split(" ")[0]}
           </span>

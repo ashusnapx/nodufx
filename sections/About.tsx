@@ -147,7 +147,12 @@ export const About = () => {
 
           {/* CTA Buttons */}
           <motion.div variants={fadeUp} className='flex flex-wrap gap-4 pt-4'>
-            <a href={siteConfig.about.resumeUrl} download>
+            <a
+              href={siteConfig.about.resumeUrl}
+              download
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <Button variant='primary' className='gap-2'>
                 <Download className='w-4 h-4' />
                 Download CV

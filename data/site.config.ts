@@ -81,17 +81,21 @@ export const siteConfig: SiteConfig = {
     title: "About Me",
     description:
       "I am a dedicated professional with a vivid imagination and a knack for problem-solving. My journey is defined by a continuous quest for learning and excellence. I believe in creating work that not only functions well but also inspires.",
-    avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop", // Placeholder female avatar
+    avatar: "/images/photo-1.jpg",
     quickFacts: [
       {
         label: "Languages Known",
-        value: "English & Kannada (ಇಂಗ್ಲಿಷ್ ಮತ್ತು ಕನ್ನಡ)",
+        value: "English & Kannada",
       },
-      { label: "Current Role", value: "Aspiring Developer / Creative Thinker" },
-      { label: "Interests", value: "Reading, Traveling, Classical Music" },
+      { label: "Current Role", value: "Aspiring Developer" },
+      { label: "Interests", value: "Reading, Traveling, Classical Dance" },
     ],
     skills: [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "MySQL",
+      "Python",
       "Communication",
       "Problem Solving",
       "Creativity",
@@ -99,65 +103,64 @@ export const siteConfig: SiteConfig = {
       "Time Management",
     ],
     achievements: [
-      "Best Performer 2024",
-      "Certified Creative Thinker",
-      "Community Volunteer Award",
+      "State Board Topper ",
+      "Awarded for best essay literature in English",
+      "Good Anchorer",
     ],
-    resumeUrl: "/resume.pdf",
+    resumeUrl:
+      "https://drive.google.com/file/d/10XPCkM-BZOhVMdPBXRQNWLK2R3VMh8Mc/view?usp=sharing",
   },
 
   projects: [
     {
-      title: "Project Alpha",
+      title: "AurumX - CES Redemption Platform",
       description:
-        "A comprehensive study on user interactions and digital interfaces.",
-      tags: ["Research", "UI/UX"],
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
-      link: "#",
+        "A production-grade internal banking reward redemption system designed for Customer Executive Support (CES) users to manage rewards on behalf of customers.",
+      tags: ["Spring Boot", "Angular", "MySQL", "Spring Security"],
+      image: "/images/project-aurumx-ai.png",
+      link: "https://github.com/Nagalaxmi-Jawalgi/aurumx",
     },
     {
-      title: "Creative Canvas",
+      title: "AstraTestX: AI TestOps Platform",
       description:
-        "An exploratory art project blending traditional methods with digital tools.",
-      tags: ["Art", "Digital"],
-      image:
-        "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2000&auto=format&fit=crop",
-      link: "#",
+        "A next-generation software testing platform that utilizes AI to automate test case generation, heal broken test scripts, and orchestrate distributed executions.",
+      tags: ["AI", "React", "Node.js", "FastAPI", "OpenAI"],
+      image: "/images/project-astratestx-ai.png",
+      link: "https://github.com/Nagalaxmi-Jawalgi/AstraTestX",
     },
   ],
 
   gallery: [
     {
-      src: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000&auto=format&fit=crop",
-      alt: "Hobby 1",
-      category: "Hobbies",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1000&auto=format&fit=crop",
-      alt: "Art 1",
-      category: "Inspiration",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1000&auto=format&fit=crop",
-      alt: "Travel 1",
+      src: "/images/photo-1.jpg",
+      alt: "Personal",
       category: "Life",
     },
     {
-      src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop",
-      alt: "Team",
-      category: "Achievements",
+      src: "/images/photo-2.jpg",
+      alt: "Event",
+      category: "Memories",
     },
     {
-      src: "https://images.unsplash.com/photo-1469474932796-b494c71f2bb2?q=80&w=1000&auto=format&fit=crop",
-      alt: "Nature",
-      category: "Inspiration",
+      src: "/images/photo-3.jpg",
+      alt: "Team",
+      category: "Work",
+    },
+    {
+      src: "/images/photo-4.jpg",
+      alt: "Group",
+      category: "Friends",
+    },
+    {
+      src: "/images/photo-5.jpg",
+      alt: "Celebration",
+      category: "Moments",
     },
   ],
 
   contact: {
     title: "Let's Connect",
-    email: "nagalaxmi@example.com",
+    email: "nagalaxmijawalgi1980@gmail.com",
     cta: "Get in Touch",
   },
 
@@ -171,9 +174,21 @@ export const siteConfig: SiteConfig = {
   ],
 
   socials: [
-    { label: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
-    { label: "GitHub", href: "https://github.com", icon: Github },
-    { label: "Email", href: "mailto:nagalaxmi@example.com", icon: Mail },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/nagalaxmi-jawalagi-300b49320",
+      icon: Linkedin,
+    },
+    {
+      label: "GitHub",
+      href: "https://github.com/Nagalaxmi-Jawalgi",
+      icon: Github,
+    },
+    {
+      label: "Email",
+      href: "mailto:nagalaxmijawalgi1980@gmail.com",
+      icon: Mail,
+    },
   ],
 
   footer: {
